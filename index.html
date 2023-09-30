@@ -1,0 +1,100 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>HTML FORM</h1>
+    <form enctype="multipart/form-data">
+      <div>
+        <label for="name">Name</label>
+        <input name="name" id="name" placeholder="username" required />
+      </div>
+      <br />
+      <div>
+        <label for="email"
+          >Email <input type="email" name="email" id="email" required
+        /></label>
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <br />
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" />
+      </div>
+      <br />
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" max="50" step="1" />
+      </div>
+      <br />
+      <div>
+        <label for="date">Birthday</label>
+        <input type="date" name="date" id="date" min="1992-09-09" />
+      </div>
+      <div>
+        Gender
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female" />
+        </div>
+      </div>
+      <div>Favorite Food</div>
+      <div>
+        <label for="briyani">Briyani</label>
+        <input type="checkbox" name="briyani" id="briyani" />
+      </div>
+      <div>
+        <label for="curd rice">Curd Rice</label>
+        <input type="checkbox" name="curd rice" id="curd rice" />
+      </div>
+      <div>
+        <label for="haricolor">Hair color</label>
+        <select name="hair color" id="haircolor">
+          <option value="Brown">Brown</option>
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Blonde">Blonde</option>
+        </select>
+      </div>
+      <div>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <div>
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="file">File</label
+        ><input type="file" name="file" id="file" />
+      </div>
+      <br />
+      <div>
+        <label for="OTP">OTP</label>
+        <input type="OTP" name="OTP" id="OTP" />
+      </div>
+
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
